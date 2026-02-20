@@ -1,0 +1,352 @@
+/* header */
+header {
+    background-color: rgba(0,0,0,0.8);
+}
+
+/* dining */
+.dining {
+    padding: 120px 0;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+.dining .dining_title {
+    width: 90%;
+    max-width: 1700px;
+    margin: 0 auto 100px;
+}
+
+.dining .dining_title h5 {
+    color: #846e54;
+    margin-bottom: 10px;
+}
+
+.dining .dining_title h3 {
+    font-size: 24px;
+    font-weight: 200;
+    margin-bottom: 10px;
+}
+
+.dining .dining_list_wrap {
+    width: 90%;
+    max-width: 1700px;
+    margin: 0 auto;
+}
+
+.dining .dining_list_wrap .dining_list ul {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.dining .dining_list_wrap .dining_list ul li {
+    padding: 8px 20px;
+    border: 1px solid #846e54;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.dining .dining_list_wrap .dining_list ul li.on {
+    background-color: #000;
+    color: #fff;
+}
+
+/* dining list search */
+.dining .dining_list_wrap .list_search {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+/* dining list search left */
+.dining .dining_list_wrap .list_search .left {
+    display: flex;
+    align-items: center;
+    border: 1px solid #c5c5c5;
+    padding: 15px 15px;
+    font-size: 12px;
+}
+
+.dining .dining_list_wrap .list_search .left .hotel_multi i {
+    padding-left: 10px;
+}
+
+.dining .dining_list_wrap .list_search .left .hotel_multi i.rotate {
+    transform: rotate(180deg);
+    padding-right: 10px;
+    padding-left: 0;
+}
+
+/* hotel content */
+.dining .dining_list_wrap .list_search .left .hotel_content {
+    position: absolute;
+    top: calc(100% + 10px);
+    left: 0;
+    background-color: #fff;
+    z-index: 1;
+    box-sizing: border-box;
+    border: 1px solid #eeeeee;
+    border-radius: 5px;
+    width: 700px;
+    padding: 20px;
+    height: auto;
+    display: none;
+}
+
+.dining .dining_list_wrap .list_search .left .hotel_content .hotel_group {
+    display: flex;
+}
+
+.dining .dining_list_wrap .list_search .left .hotel_content .hotel_group .group_left {
+    width: 200px;
+    flex-shrink: 0;
+    border-right: 1px solid #c5c5c5;
+    margin-right: 20px;
+}
+
+.dining .dining_list_wrap .list_search .left .hotel_content .hotel_group .group_left .item {
+    line-height: 40px;
+    height: auto;
+    display: block;
+    padding: 0 10px;
+    color: #666666;
+}
+
+.dining .dining_list_wrap .list_search .left .hotel_content .hotel_group .group_left .item.active {
+    background-color: #eeeeee;
+    color: #000;
+    font-weight: 700;
+}
+
+.dining .dining_list_wrap .list_search .left .hotel_content .hotel_group .group_right::-webkit-scrollbar {
+    display: none;
+}
+
+.dining .dining_list_wrap .list_search .left .hotel_content .hotel_group .group_right .groups {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 5px;
+}
+
+.dining .dining_list_wrap .list_search .left .hotel_content .hotel_group .group_right .groups:not(:first-child) {
+    margin-top: 8px;
+}
+
+.dining .dining_list_wrap .list_search .left .hotel_content .hotel_group .group_right .groups .groups_item {
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.dining .dining_list_wrap .list_search .left .hotel_content .hotel_group .group_right .groups input {
+    appearance: none;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 5rem;
+    cursor: pointer;
+    outline-offset: -1px;
+}
+
+.dining .dining_list_wrap .list_search .left .hotel_content .hotel_group .group_right .groups .groups_txt {
+    border: 1px solid #dddddd;
+    padding: 8px 15px;
+    line-height: 33px;
+    border-radius: 5rem;
+}
+
+.dining .dining_list_wrap .list_search .left .hotel_content .hotel_group .group_right {
+    display: none;
+}
+
+
+.dining .dining_list_wrap .list_search .left .hotel_content .hotel_group .group_right p {
+    font-size: 12px;
+    padding-left: 10px;
+    font-weight: 700;
+}
+
+
+/* dining list search right */
+
+.dining .dining_list_wrap .list_search .right ._input {
+    display: flex;
+    border: 1px solid #c5c5c5;
+
+}
+
+.dining .dining_list_wrap .list_search .right ._input input {
+    appearance: none;
+    border: none;
+    padding: 15px 15px;
+    width: 100%;
+    height: 100%;
+    outline: none;
+}
+
+.dining .dining_list_wrap .list_search .right ._input .btn {
+    padding: 0 15px;
+    display: inline-flex;
+    align-items: center;
+    background-color: inherit;
+    border: none;
+    cursor: pointer;
+}
+
+
+.dining .dining_list_wrap .list_search .right ._input .btn i {
+    color: #666666;
+}
+
+/* dining item*/
+
+.dining .dining_list_wrap .dining_item {
+    padding: 20px 0 40px;
+    border-top: 2px solid #333333;
+    border-bottom: 1px solid #dddddd;
+}
+
+.dining .dining_list_wrap .dining_item .item_list {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+
+}
+
+.dining .dining_list_wrap .dining_item .item_list a {
+    width: calc(33.3% - 20px);
+}
+
+.dining .dining_list_wrap .dining_item .item_list .item .img_box {
+    overflow: hidden;
+}
+
+.dining .dining_list_wrap .dining_item .item_list .item .img_box img {
+    width: 100%;
+    height: 270px;
+    transition: 0.5s;
+}
+
+
+.dining .dining_list_wrap .dining_item .item_list .item .img_box:hover img {
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+.dining .dining_list_wrap .dining_item .item_list .item .text_box {
+    width: 100%;
+    padding-top: 20px;
+}
+
+.dining .dining_list_wrap .dining_item .item_list .item .text_box ._info {
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+}
+
+.dining .dining_list_wrap .dining_item .item_list .item .text_box ._info span {
+    font-size: 12px;
+}
+
+.dining .dining_list_wrap .dining_item .item_list .item .text_box ._info ._hotel {
+    background-color: #222222;
+    color: #fff;
+    padding: 8px 15px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dining .dining_list_wrap .dining_item .item_list .item .text_box ._info ._title {
+    padding: 8px 15px;
+    border: 1px solid #555555;
+    background-color: #fff;
+    color: #555555;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dining .dining_list_wrap .dining_item .item_list .item .text_box ._name {
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.dining .dining_list_wrap .dining_item .item_list .item .text_box .intro {
+    margin-top: 20px;
+}
+
+.dining .dining_list_wrap .dining_item .item_list .item .text_box .intro .intro_text {
+    display: flex;
+    font-size: 14px;
+    flex-wrap: wrap;
+}
+
+.dining .dining_list_wrap .dining_item .item_list .item .text_box .intro .intro_text .intro_txt {
+    margin-right: 10px;
+    color: #666666;
+    line-height: 24px;
+}
+
+.dining .dining_list_wrap .dining_item .item_list .item .text_box .intro .intro_text ._intro_txt {
+    line-height: 24px;
+    color: #444444;
+}
+
+.dining .dining_list_wrap .dining_item .item_list .item .text_box .intro .intro_text ._intro_txt::before {
+    content: '';
+    display: inline-block;    
+    width: 1px;
+    height: 10px;
+    background-color: #dddddd;
+    margin: 5px 10px 0 0;
+}
+
+
+/* dining pagination */
+.dining .dining_list_wrap .pagination_wrap {
+    margin-top: 30px;
+}
+
+.dining .dining_list_wrap .pagination_wrap .pagination {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+
+.dining .dining_list_wrap .pagination_wrap .pagination a {
+    display: inline-flex;
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+}
+
+.dining .dining_list_wrap .pagination_wrap .pagination a.active {
+    background-color: #000;
+    color: #fff;
+}
+
+@media (max-width : 1000px) {
+    .dining {
+        margin-top: 0;
+    }
+
+    .dining .dining_list_wrap .dining_item .item_list {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .dining .dining_list_wrap .dining_item .item_list a {
+        width: 100%;
+    }
+
+    .dining .dining_list_wrap .dining_item .item_list .item .img_box img {
+        height: 360px;
+    }
+}

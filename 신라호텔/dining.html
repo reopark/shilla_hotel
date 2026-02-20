@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>다이닝</title>
+    <link rel="stylesheet" href="com.css">
+    <link rel="stylesheet" href="dining.css">
+    <link rel="icon" href="img/logo_b.png">
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/dining.js"></script>
+</head>
+<body>
+    <!--header 시작-->
+    <div class="bg"></div>
+    <div class="bg1"></div>
+    <header>
+        <div class="header_top">
+            <div class="logo">
+                <a href="index.html"><img src="img/logo_w.png" alt=""></a>
+            </div>
+            <div class="right">
+                <ul class="right_ul">
+                    <li class="right_list"><a href="login.html">로그인</a></li>
+                    <li class="right_list"><a href="">호텔찾기</a></li>
+                    <li class="right_list"><a href="">멤버십</a></li>
+                    <li class="right_list drop_down">
+                        <a href="">예약확인<i class="fa-solid fa-angle-down"></i></a>
+                        <ul class="sub_ul">
+                            <li class="sub_list">
+                                <a href="">객실</a>
+                            </li>
+                            <li class="sub_list">
+                                <a href="">다이닝</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="right_list drop_down">
+                        <a href="">KR<i class="fa-solid fa-angle-down"></i></a>
+                        <ul class="sub_ul">
+                            <li class="sub_list">
+                                <a href="#" data-lang="'ko">KR</a>
+                            </li>
+                            <li class="sub_list">
+                                <a href="">English</a>
+                            </li>
+                            <li class="sub_list">
+                                <a href="">日本語</a>
+                            </li>
+                            <li class="sub_list">
+                                <a href="">中文(简体字)</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <a href=""><li class="btn">예약하기</li></a>
+                </ul>
+            </div>
+            <div class="ham">
+                <div class="bar bar1"></div>
+                <div class="bar bar2"></div>
+                <div class="bar bar3"></div>
+            </div>
+            <div class="language">
+                <a href="">KR<i class="fa-solid fa-angle-down"></i></a>
+                <ul class="sub_ul">
+                    <li class="sub_list on">
+                        <a href="#" data-lang="'ko">KR</a>
+                    </li>
+                    <li class="sub_list">
+                        <a href="">English</a>
+                    </li>
+                    <li class="sub_list">
+                        <a href="">日本語</a>
+                    </li>
+                    <li class="sub_list">
+                        <a href="">中文(简体字)</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="header_bottom">
+            <ul>
+                <li class="bottom_list">
+                    <a href="">brand</a>
+                    <div class="sub">
+                        <div class="container">
+                            <ul class="sub_ul">
+                                <li class="sub_li"><a href="">서울신라호텔</a></li>
+                                <li class="sub_li"><a href="">제주신라호텔</a></li>
+                                <li class="sub_li"><a href="">신라모노그램</a></li>
+                                <li class="sub_li"><a href="">신라스테이</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="bottom_list">
+                    <a href="dining.html">dining</a>
+                </li>
+                <li class="bottom_list">
+                    <a href="">member ship</a>
+                </li>
+                <li class="bottom_list">
+                    <a href="">wedding & convention</a>
+                    <div class="sub">
+                        <div class="container">
+                            <ul class="sub_ul">
+                                <li class="sub_li"><a href="">웨딩</a></li>
+                                <li class="sub_li"><a href="">기업연회</a></li>
+                                <li class="sub_li"><a href="">가족연회</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="bottom_list">
+                    <a href="">shilla shop</a>
+                </li>
+                <li class="bottom_list">
+                    <a href="">event</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <!--header 끝-->
+    <!--m_menu 시작-->
+    <div class="m_menu">
+        <div class="m_menu_top">
+            <div class="language">
+                <a href="">KR<i class="fa-solid fa-angle-down"></i></a>
+                <ul class="sub_ul">
+                    <li class="sub_list">
+                        <a href="#" data-lang="'ko">KR</a>
+                    </li>
+                    <li class="sub_list">
+                        <a href="">English</a>
+                    </li>
+                    <li class="sub_list">
+                        <a href="">日本語</a>
+                    </li>
+                    <li class="sub_list">
+                        <a href="">中文(简体字)</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="logo">
+                <a href="index.html"><img src="img/logo_b.png" alt=""></a>
+            </div>
+            <i class="fa-solid fa-x"></i> 
+            
+        </div>
+        <div class="m_login">
+            <div class="text">
+                <ul>
+                    <li><a href="login.html">로그인</a></li>
+                    <li><a href="">마이 페이지</a></li>
+                    <li><a href="">예약 확인</a></li>
+                </ul>
+            </div>
+            <div class="btn">예약하기</div>
+        </div>
+        <ul class="list">
+            <li class="m_list">
+                <a href="">brand <i class="fa-solid fa-angle-down"></i></a>
+                <div class="sub">
+                    <div class="item">
+                        <ul class="sub_ul">
+                            <li class="sub_li"><a href="#none">서울신라호텔</a></li>
+                            <li class="sub_li"><a href="#none">제주신라호텔</a></li>
+                            <li class="sub_li"><a href="#none">신라모노그램</a></li>
+                            <li class="sub_li"><a href="#none">신라스테이</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+            <li class="m_list">
+                <a href="dining.html">dining</a>
+            </li>
+            <li class="m_list">
+                <a href="#none">member ship</a>
+            </li>
+            <li class="m_list">
+                <a href="">wedding & convention <i class="fa-solid fa-angle-down"></i></a>
+                <div class="sub">
+                    <div class="item">
+                        <ul class="sub_ul">
+                            <li class="sub_li"><a href="#none">웨딩</a></li>
+                            <li class="sub_li"><a href="#none">기업연회</a></li>
+                            <li class="sub_li"><a href="#none">가족연회</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+            <li class="m_list">
+                <a href="#none">shilla shop</a>
+            </li>
+            <li class="m_list">
+                <a href="#none">event</a>
+            </li>
+        </ul>
+
+        <div class="un_menu">
+            <ul>
+                <li><a href="">고객지원</a></li>
+                <li><a href="">멤버십</a></li>
+                <li><a href="">오시는길</a></li>
+            </ul>
+            <div class="sns">
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-kakao-talk"></i></a>
+            </div>
+        </div>
+    </div>
+    <!--m_menu 끝-->
+    <!-- dining 시작-->
+    <div class="dining">
+        <div class="dining_title">
+            <h5>다이닝</h5>
+            <h3>정통을 뛰어넘는 하이엔드 스타일의 다이닝, 라운지에서 맛보는 스위트 트리트, 눈을 행복하게 하는 감각적인 패스트리</h3>
+        </div>
+        <div class="dining_list_wrap">
+            <div class="dining_list">
+                <ul>
+                    <li data-type = 'all' class="on">전체</li>
+                    <li data-type = '레스토랑'>레스토랑</li>
+                    <li data-type = '라운지 & 바'>라운지 & 바</li>
+                    <li data-type = '베이커리'>베이커리</li>
+                </ul>
+            </div>
+            <div class="list_search">
+                <div class="left">
+                    <div class="hotel_multi">
+                        호텔 선택 <i class="fa-solid fa-angle-down"></i> 
+                    </div>
+                    <!-- 호텔 선택  창 -->
+                    <div class="hotel_content">
+                        <div class="hotel_group">
+                            <div class="group_left">
+                                <div class="item active" data-area="한국">한국</div>
+                                <div class="item" data-area="중국">중국</div>
+                                <div class="item" data-area="베트남">베트남</div>
+                            </div>
+                            <div class="group_right" data-area="한국">
+                                <div class="groups">
+                                    <div class="groups_item">
+                                        <label>
+                                            <input type="checkbox" value="kr">
+                                            <span class="groups_txt">한국 전체</span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <p class="group_title">서울 강북</p>
+                                <div class="groups">
+                                    <div class="groups_item">
+                                        <label>
+                                            <input type="checkbox" value="kr">
+                                            <span class="groups_txt">서울신라호텔</span>
+                                        </label>
+                                    </div>
+                                    <div class="groups_item">
+                                        <label>
+                                            <input type="checkbox" value="kr">
+                                            <span class="groups_txt">신라스테이 광화문</span>
+                                        </label>
+                                    </div>
+                                    <div class="groups_item">
+                                        <label>
+                                            <input type="checkbox" value="kr">
+                                            <span class="groups_txt">신라스테이 마포</span>
+                                        </label>
+                                    </div>
+                                    <div class="groups_item">
+                                        <label>
+                                            <input type="checkbox" value="kr">
+                                            <span class="groups_txt">신라스테이 서대문</span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <p class="group_title">서울 강남</p>
+                                <div class="groups">
+                                    <div class="groups_item">
+                                        <label>
+                                            <input type="checkbox" value="kr">
+                                            <span class="groups_txt">신라스테이 역삼</span>
+                                        </label>
+                                    </div>
+                                    <div class="groups_item">
+                                        <label>
+                                            <input type="checkbox" value="kr">
+                                            <span class="groups_txt">신라스테이 서초</span>
+                                        </label>
+                                    </div>
+                                    <div class="groups_item">
+                                        <label>
+                                            <input type="checkbox" value="kr">
+                                            <span class="groups_txt">신라스테이 구로</span>
+                                        </label>
+                                    </div>
+                                    <div class="groups_item">
+                                        <label>
+                                            <input type="checkbox" value="kr">
+                                            <span class="groups_txt">신라스테이 삼성</span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <p class="group_title">전국</p>
+                                <div class="groups">
+                                    <div class="groups_item">
+                                        <label>
+                                            <input type="checkbox" value="kr">
+                                            <span class="groups_txt">제주신라호텔</span>
+                                        </label>
+                                    </div>
+                                    <div class="groups_item">
+                                        <label>
+                                            <input type="checkbox" value="kr">
+                                            <span class="groups_txt">신라스테이 동탄</span>
+                                        </label>
+                                    </div>
+                                    <div class="groups_item">
+                                        <label>
+                                            <input type="checkbox" value="kr">
+                                            <span class="groups_txt">신라스테이 천안</span>
+                                        </label>
+                                    </div>
+                                    <div class="groups_item">
+                                        <label>
+                                            <input type="checkbox" value="kr">
+                                            <span class="groups_txt">신라스테이 전주</span>
+                                        </label>
+                                    </div>
+                                    <div class="groups_item">
+                                        <label>
+                                            <input type="checkbox" value="kr">
+                                            <span class="groups_txt">신라스테이 울산</span>
+                                        </label>
+                                    </div>
+                                    <div class="groups_item">
+                                        <label>
+                                            <input type="checkbox" value="kr">
+                                            <span class="groups_txt">신라스테이 여수</span>
+                                        </label>
+                                    </div>
+                                    <div class="groups_item">
+                                        <label>
+                                            <input type="checkbox" value="kr">
+                                            <span class="groups_txt">신라스테이 서부산</span>
+                                        </label>
+                                    </div>
+                                    <div class="groups_item">
+                                        <label>
+                                            <input type="checkbox" value="kr">
+                                            <span class="groups_txt">신라스테이 해운대</span>
+                                        </label>
+                                    </div>
+                                    <div class="groups_item">
+                                        <label>
+                                            <input type="checkbox" value="kr">
+                                            <span class="groups_txt">신라스테이 제주</span>
+                                        </label>
+                                    </div>
+                                    <div class="groups_item">
+                                        <label>
+                                            <input type="checkbox" value="kr">
+                                            <span class="groups_txt">신라스테이 플러스 이호테우</span>
+                                        </label>
+                                    </div>
+                                    <div class="groups_item">
+                                        <label>
+                                            <input type="checkbox" value="kr">
+                                            <span class="groups_txt">신라스테이 강릉</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="group_right" data-area="중국">
+                                <div class="groups">
+                                    <div class="groups_item">
+                                        <label>
+                                            <input type="checkbox" value="kr">
+                                            <span class="groups_txt">중국 전체</span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <p class="group_title">중국</p>
+                                <div class="groups">
+                                    <div class="groups_item">
+                                        <label>
+                                            <input type="checkbox" value="kr">
+                                            <span class="groups_txt">신라모노그램 시안</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="group_right" data-area="베트남">
+                                <div class="groups">
+                                    <div class="groups_item">
+                                        <label>
+                                            <input type="checkbox" value="kr">
+                                            <span class="groups_txt">베트남 전체</span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <p class="group_title">베트남</p>
+                                <div class="groups">
+                                    <div class="groups_item">
+                                        <label>
+                                            <input type="checkbox" value="kr">
+                                            <span class="groups_txt">신라모노그램 다낭</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="fillter_input">
+                        <div class="_input">
+                            <input type="text" placeholder="검색어를 입력하세요">
+                            <button class="btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="dining_item">
+                <div class="item_list">
+                    <a href="">
+                        <div class="item">
+                            <div class="img_box">
+                                <img src="" alt="">
+                            </div>
+                            <div class="text_box">
+                                <div class="_info">
+                                    <span class="_hotel"></span>
+                                    <span class="_title"></span>
+                                </div>
+                                <div class="_name"></div>
+                                <div class="intro">
+                                    <div class="intro_text">
+                                        <div class="intro_txt intro_txt1"></div>
+                                        <div class="_intro_txt intro_txt2"></div>
+                                    </div>
+                                    <div class="intro_text">
+                                        <div class="intro_txt intro_txt3"></div>
+                                        <div class="_intro_txt intro_txt4"></div>
+                                    </div>
+                                    <div class="intro_text">
+                                        <div class="intro_txt intro_txt5"></div>
+                                        <div class="_intro_txt intro_txt6"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="item">
+                            <div class="img_box">
+                                <img src="" alt="">
+                            </div>
+                            <div class="text_box">
+                                <div class="_info">
+                                    <span class="_hotel"></span>
+                                    <span class="_title"></span>
+                                </div>
+                                <div class="_name"></div>
+                                <div class="intro">
+                                    <div class="intro_text">
+                                        <div class="intro_txt intro_txt1"></div>
+                                        <div class="_intro_txt intro_txt2"></div>
+                                    </div>
+                                    <div class="intro_text">
+                                        <div class="intro_txt intro_txt3"></div>
+                                        <div class="_intro_txt intro_txt4"></div>
+                                    </div>
+                                    <div class="intro_text">
+                                        <div class="intro_txt intro_txt5"></div>
+                                        <div class="_intro_txt intro_txt6"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="item">
+                            <div class="img_box">
+                                <img src="" alt="">
+                            </div>
+                            <div class="text_box">
+                                <div class="_info">
+                                    <span class="_hotel"></span>
+                                    <span class="_title"></span>
+                                </div>
+                                <div class="_name"></div>
+                                <div class="intro">
+                                    <div class="intro_text">
+                                        <div class="intro_txt intro_txt1"></div>
+                                        <div class="_intro_txt intro_txt2"></div>
+                                    </div>
+                                    <div class="intro_text">
+                                        <div class="intro_txt intro_txt3"></div>
+                                        <div class="_intro_txt intro_txt4"></div>
+                                    </div>
+                                    <div class="intro_text">
+                                        <div class="intro_txt intro_txt5"></div>
+                                        <div class="_intro_txt intro_txt6"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="item">
+                            <div class="img_box">
+                                <img src="" alt="">
+                            </div>
+                            <div class="text_box">
+                                <div class="_info">
+                                    <span class="_hotel"></span>
+                                    <span class="_title"></span>
+                                </div>
+                                <div class="_name"></div>
+                                <div class="intro">
+                                    <div class="intro_text">
+                                        <div class="intro_txt intro_txt1"></div>
+                                        <div class="_intro_txt intro_txt2"></div>
+                                    </div>
+                                    <div class="intro_text">
+                                        <div class="intro_txt intro_txt3"></div>
+                                        <div class="_intro_txt intro_txt4"></div>
+                                    </div>
+                                    <div class="intro_text">
+                                        <div class="intro_txt intro_txt5"></div>
+                                        <div class="_intro_txt intro_txt6"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="item">
+                            <div class="img_box">
+                                <img src="" alt="">
+                            </div>
+                            <div class="text_box">
+                                <div class="_info">
+                                    <span class="_hotel"></span>
+                                    <span class="_title"></span>
+                                </div>
+                                <div class="_name"></div>
+                                <div class="intro">
+                                    <div class="intro_text">
+                                        <div class="intro_txt intro_txt1"></div>
+                                        <div class="_intro_txt intro_txt2"></div>
+                                    </div>
+                                    <div class="intro_text">
+                                        <div class="intro_txt intro_txt3"></div>
+                                        <div class="_intro_txt intro_txt4"></div>
+                                    </div>
+                                    <div class="intro_text">
+                                        <div class="intro_txt intro_txt5"></div>
+                                        <div class="_intro_txt intro_txt6"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="item">
+                            <div class="img_box">
+                                <img src="" alt="">
+                            </div>
+                            <div class="text_box">
+                                <div class="_info">
+                                    <span class="_hotel"></span>
+                                    <span class="_title"></span>
+                                </div>
+                                <div class="_name"></div>
+                                <div class="intro">
+                                    <div class="intro_text">
+                                        <div class="intro_txt intro_txt1"></div>
+                                        <div class="_intro_txt intro_txt2"></div>
+                                    </div>
+                                    <div class="intro_text">
+                                        <div class="intro_txt intro_txt3"></div>
+                                        <div class="_intro_txt intro_txt4"></div>
+                                    </div>
+                                    <div class="intro_text">
+                                        <div class="intro_txt intro_txt5"></div>
+                                        <div class="_intro_txt intro_txt6"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="item">
+                            <div class="img_box">
+                                <img src="" alt="">
+                            </div>
+                            <div class="text_box">
+                                <div class="_info">
+                                    <span class="_hotel"></span>
+                                    <span class="_title"></span>
+                                </div>
+                                <div class="_name"></div>
+                                <div class="intro">
+                                    <div class="intro_text">
+                                        <div class="intro_txt intro_txt1"></div>
+                                        <div class="_intro_txt intro_txt2"></div>
+                                    </div>
+                                    <div class="intro_text">
+                                        <div class="intro_txt intro_txt3"></div>
+                                        <div class="_intro_txt intro_txt4"></div>
+                                    </div>
+                                    <div class="intro_text">
+                                        <div class="intro_txt intro_txt5"></div>
+                                        <div class="_intro_txt intro_txt6"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="item">
+                            <div class="img_box">
+                                <img src="" alt="">
+                            </div>
+                            <div class="text_box">
+                                <div class="_info">
+                                    <span class="_hotel"></span>
+                                    <span class="_title"></span>
+                                </div>
+                                <div class="_name"></div>
+                                <div class="intro">
+                                    <div class="intro_text">
+                                        <div class="intro_txt intro_txt1"></div>
+                                        <div class="_intro_txt intro_txt2"></div>
+                                    </div>
+                                    <div class="intro_text">
+                                        <div class="intro_txt intro_txt3"></div>
+                                        <div class="_intro_txt intro_txt4"></div>
+                                    </div>
+                                    <div class="intro_text">
+                                        <div class="intro_txt intro_txt5"></div>
+                                        <div class="_intro_txt intro_txt6"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="item">
+                            <div class="img_box">
+                                <img src="" alt="">
+                            </div>
+                            <div class="text_box">
+                                <div class="_info">
+                                    <span class="_hotel"></span>
+                                    <span class="_title"></span>
+                                </div>
+                                <div class="_name"></div>
+                                <div class="intro">
+                                    <div class="intro_text">
+                                        <div class="intro_txt intro_txt1"></div>
+                                        <div class="_intro_txt intro_txt2"></div>
+                                    </div>
+                                    <div class="intro_text">
+                                        <div class="intro_txt intro_txt3"></div>
+                                        <div class="_intro_txt intro_txt4"></div>
+                                    </div>
+                                    <div class="intro_text">
+                                        <div class="intro_txt intro_txt5"></div>
+                                        <div class="_intro_txt intro_txt6"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    
+                </div>
+            </div>
+            <div class="pagination_wrap">
+                <div class="pagination">
+                    <a href="" class="prev"><i class="fa-solid fa-angle-left"></i></a>
+
+                    <a href="" class="next"><i class="fa-solid fa-angle-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- dining 끝-->
+    <!--footer 시작-->
+    <footer>
+        <div class="footer_top">
+            <div class="img_box">
+                <img src="img/logo_b.png" alt="">
+            </div>
+            <div class="brand">
+                <a href="">THE SHILLA</a>
+                <a href="">SHILLA MONOGRAM</a>
+                <a href="">SHILLA STAY</a>
+            </div>
+            <div class="sns">
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-kakao-talk"></i></a>
+            </div>
+        </div>
+        <div class="footer_mid">
+            <div class="left">
+                <a href=""><span>호텔 신라</span></a >
+                <a href=""><span>호텔 개발</span></a>
+                <a href=""><span>고객문의</span></a>
+                <a href=""><span>호텔별 연락처</span></a>
+                <a href=""><span>사이트맵</span></a>
+                <a href=""><span>신라 샵</span></a>
+            </div>
+            <div class="right">
+                <a href=""><span>신라리워즈 약관</span></a>
+                <a href=""><span>개인정보처리방침</span></a>
+            </div>
+        </div>
+        <div class="footer_bottom">
+            <div class="left">
+                <div class="item">
+                    <span>(주) 호텔신라 서울특별시 중구 동호로 249 (우 : 04605)</span>
+                    <span>대표 : 땡땡이</span>
+                    <span>사업자 등록번호 : 203-81-43363</span>
+                    <span>통신판매신고번호 중구 00272호</span>
+                </div>
+                <div class="item">
+                    <span>서울 객실 예약 : shilla.reserve@samsung.com</span>
+                    <span>제주 객실 예약 : jejushilla@samsung.com</span>
+                </div>
+                <div class="item">
+                    <span>Copyright © HOTEL SHILLA Co. LTD. All rights reserved.</span>
+                </div>
+            </div>
+            <div class="right">
+                <img src="img/footer.png" alt="">
+                <div class="text">
+                    <span>인증범위 : (주) 호텔신라 호텔 인터넷 홈페이지 서비스</span>
+                    <span>유효기간 : 2023.12.20 ~ 2026.12.19</span>
+                </div>
+            </div>
+            <div class="m_footer_bottom">
+                <div class="sns">
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-kakao-talk"></i></a>
+                </div>
+                <a href="#none">호텔 신라 사업자 정보 <i class="fa-solid fa-angle-down"></i></a>
+                <div class="cont">
+                    <p>
+                        <span>(주) 호텔신라 서울특별시 중구 동호로 249 (우 : 04605)</span>
+                        <span>대표 : 땡땡이</span>
+                    </p>
+                    <p>
+                        <span>사업자 등록번호 : 203-81-43363</span>
+                        <span>통신판매신고번호 중구 00272호</span>
+                    </p>
+                    <p>
+                        <span>서울 객실 예약 : shilla.reserve@samsung.com</span>
+                        <span>제주 객실 예약 : jejushilla@samsung.com</span>
+                    </p>
+                </div>
+                <span>Copyright © HOTEL SHILLA Co. LTD. All rights reserved.</span>
+            </div>
+            <div class="mark">
+                <img src="img/footer.png" alt="">
+                <div class="text">
+                    <span>인증범위 : (주) 호텔신라 호텔 인터넷 홈페이지 서비스</span>
+                    <span>유효기간 : 2023.12.20 ~ 2026.12.19</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--footer 끝-->
+</body>
+</html>

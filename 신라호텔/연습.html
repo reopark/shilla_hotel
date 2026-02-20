@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            position: relative;
+            padding: 0;
+            margin: 0;
+        }
+
+        img {
+            display: block;
+            object-fit: cover;
+            width: 100%;
+        }
+
+        .section3 {
+            margin: 80px 0;
+        }
+
+
+        .section3 .section_title h3 {
+            text-align: center;
+            font-size: 32px;
+        }
+
+        .section3 img {
+            width: auto;
+        }
+
+.slider_wrap {
+  overflow: hidden;
+  position: relative;
+    width: 90%;
+  max-width: 1700px;
+  margin: 0 auto; /* 중앙 정렬 */
+}
+
+.container {
+  display: flex;
+  transition: transform 0.5s ease;
+  gap: 10px;
+
+}
+
+.item {
+  flex: 0 0 auto;
+  transition: width 0.5s ease, height 0.5s ease;
+}
+
+.item.small .img_box img {
+  width: 370px;
+  height: 459px;
+  object-fit: cover;
+}
+
+.item.large .img_box img {
+  width: 497px;
+  height: 580px;
+  object-fit: cover;
+}
+
+.img_box {
+  position: relative;
+  overflow: hidden;
+}
+
+
+    </style>
+</head>
+<body>
+    <section class="section3">
+        <div class="section_title">
+            <h3>Shilla Event</h3>
+        </div>
+    <div class="slider_wrap">
+        <div class="container">
+            <div class="item small">
+                <div class="img_box">
+                    <img src="img/sec3-1.png" alt="">
+                </div>
+                
+            </div>
+            <div class="item small">
+                <div class="img_box">
+                    <img src="img/sec3-2.png" alt="">
+                </div>
+                
+            </div>
+            <div class="item large">
+                <div class="img_box">
+                    <img src="img/sec3-3.png" alt="">
+                </div>
+                
+            </div>
+            <div class="item small">
+                <div class="img_box">
+                    <img src="img/sec3-4.png" alt="">
+                </div>
+                
+            </div>
+            <div class="item small">
+                <div class="img_box">
+                    <img src="img/sec3-5.png" alt="">
+                </div>
+            </div>
+            <div class="item small">
+                <div class="img_box">
+                    <img src="img/sec3-5.png" alt="">
+                </div>
+            </div>
+            <div class="item small">
+                <div class="img_box">
+                    <img src="img/sec3-5.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+<script>
+const slider = document.querySelector('.slider_wrap .container');
+const sliderWrap = document.querySelector('.slider_wrap');
+const originalItems = document.querySelectorAll('.slider_wrap .item');
+const originalLength = originalItems.length;
+
+// 1. 무한루프용 충분히 복제
+for (let i = 0; i < originalLength * 2; i++) { // 두 배 복제
+    const clone = originalItems[i % originalLength].cloneNode(true);
+    clone.classList.remove('large'); // 복제본은 항상 small
+    clone.classList.add('small');
+    slider.appendChild(clone);
+}
+
+// 2. 전체 NodeList
+const items = slider.querySelectorAll('.item');
+
+// 3. 현재 large 위치
+let currentIndex = 0;
+for (let i = 0; i < items.length; i++) {
+    if (items[i].classList.contains('large')) {
+        currentIndex = i;
+        break;
+    }
+}
+
+// 4. large 중앙 배치
+function centerLarge(index) {
+    const largeItem = items[index];
+    const sliderWidth = sliderWrap.offsetWidth;
+    const translateX = -(largeItem.offsetLeft - (sliderWidth / 2 - largeItem.offsetWidth / 2));
+    slider.style.transform = `translateX(${translateX}px)`;
+}
+
+// 5. 슬라이드 이동 (무한루프)
+function slideNext() {
+    // 이전 large → small
+    items[currentIndex].classList.remove('large');
+    items[currentIndex].classList.add('small');
+
+    // 다음 large 인덱스
+    currentIndex++;
+
+    // 화면상 점프 없이 무한루프 처리
+    if (currentIndex >= items.length - originalLength) {
+        // 끝에 도달하면 순간적으로 원본 위치로 이동
+        // transition 잠깐 끄고 transform 초기화
+        slider.style.transition = 'none';
+        currentIndex = currentIndex - originalLength;
+        centerLarge(currentIndex);
+        // 다음 frame에서 transition 다시 켬
+        requestAnimationFrame(() => {
+            slider.style.transition = 'transform 0.5s ease';
+        });
+    }
+
+    // 다음 large → large
+    items[currentIndex].classList.remove('small');
+    items[currentIndex].classList.add('large');
+
+    // large 중앙 배치
+    centerLarge(currentIndex);
+}
+
+// 6. 초기 위치
+window.addEventListener('load', () => centerLarge(currentIndex));
+window.addEventListener('resize', () => centerLarge(currentIndex));
+
+// 7. 10초마다 슬라이드
+setInterval(slideNext, 1000);
+</script>
+</html>

@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="com.css">
+        <link rel="stylesheet" href="swiper-bundle.min.css">
+    <style>
+        .section1 {
+    padding: 80px 0;
+    background-color: #f6f6f6;
+}
+
+.section1 .section_title .title1 h3 {
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.section1 .section_title .title2 ul {
+    display: flex;
+    gap: 20px;
+}
+
+.section1 .section_title .title2 ul li {
+    border: 1px solid #000;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.section1 .section_title .title2 ul li.active {
+    background-color: #000;
+    color: #fff;
+}
+.section1 .container_group {
+    position: relative;
+    height: 520px;
+}
+
+.section1 .container_wrap {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    max-width: 1700px;
+    overflow: hidden;
+}
+
+
+.section1 .jeju, .section1 .monogram, .section1 .stay {
+    opacity: 0;
+}
+    </style>
+</head>
+<body>
+        <section class="section1">
+        <div class="section_title">
+            <div class="title1">
+                <h3>Speical Offers</h3>
+            </div>
+            <div class="title2">
+                <ul>
+                    <li class="active">서울신라호텔</li>
+                    <li>제주신라호텔</li>
+                    <li>신라모노그램</li>
+                    <li>신라스테이</li>
+                </ul>
+            </div>
+        </div>
+        <div class="container_group">
+            <div class="container_wrap">
+                <div class="swiper-wrapper seoul">
+                    <div class="swiper-slide">
+                        <div class="img_box">
+                            <img src="img/sec1/1/1.png" alt="">
+                        </div>
+                        <div class="text_box">
+                            <h4>[App 전용] APP January Special</h4>
+                            <h6>[1월 9일까지 예약 가능] 더 이그제큐티브 라운지 입장 + 신라베어 키링</h6>
+                            <h6 class="_date">2026-01-05 ~ 2026-02-28</h6>
+                            <h5>653,400 원 ~</h5>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="img_box">
+                            <img src="img/sec1/1/2.png" alt="">
+                        </div>
+                        <div class="text_box">
+                            <h4>Babymoon Glow</h4>
+                            <h6>신라 에디션 태교 선물 세트 + 신라베어 키링 포 맘 + 신라 미니 에코백 + 발레파킹</h6>
+                            <h6 class="_date">2026-01-19 ~ 2026-03-31</h6>
+                            <h5>775,500 원 ~</h5>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="img_box">
+                            <img src="img/sec1/1/3.png" alt="">
+                        </div>
+                        <div class="text_box">
+                            <h4>[App 전용] APP January Special</h4>
+                            <h6>[1월 9일까지 예약 가능] 더 이그제큐티브 라운지 입장 + 신라베어 키링</h6>
+                            <h6 class="_date">2026-01-05 ~ 2026-02-28</h6>
+                            <h5>653,400 원 ~</h5>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="img_box">
+                            <img src="img/sec1/1/4.png" alt="">
+                        </div>
+                        <div class="text_box">
+                            <h4>Memorable Moment</h4>
+                            <h6>리워즈 1만P + 핑크 로즈 플라워 박스 + 커플 신라베어 + 샴페인 + 패스트리 부티크 케이크 + <br>발레파킹</h6>
+                            <h6 class="_date">2025-01-01 ~ 2026-02-28</h6>
+                            <h5>583,000 원 ~</h5>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="img_box">
+                            <img src="img/sec1/1/5.png" alt="">
+                        </div>
+                        <div class="text_box">
+                            <h4>Mom & Baby Bliss</h4>
+                            <h6>신라 에디션 영아 침구 세트 + 맘앤베이비 신라베어 인형 + 발레파킹</h6>
+                            <h6 class="_date">2026-01-12 ~ 2026-03-31</h6>
+                            <h5>440,000 원 ~</h5>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="img_box">
+                            <img src="img/sec1/1/6.png" alt="">
+                        </div>
+                        <div class="text_box">
+                            <h4>Drawing Your Stay</h4>
+                            <h6>Drawing Your Stay 아트 kit + '리움 프렌즈' 멤버십 + 미니바 + 실내 사우나</h6>
+                            <h6 class="_date">2025-11-16 ~ 2026-02-28</h6>
+                            <h5>397,100 원 ~</h5>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="img_box">
+                            <img src="img/sec1/1/7.png" alt="">
+                        </div>
+                        <div class="text_box">
+                            <h4>Member Exclusive</h4>
+                            <h6>리워즈 회원 전용 객실 할인</h6>
+                            <h6 class="_date">2025-07-01 ~ 2026-03-31</h6>
+                            <h5>308,550 원 ~</h5>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="img_box">
+                            <img src="img/sec1/1/8.png" alt="">
+                        </div>
+                        <div class="text_box">
+                            <h4>Brunch Delights</h4>
+                            <h6>인룸 다이닝 브런치 + 13시 레이트 체크아웃 + 실내 사우나</h6>
+                            <h6 class="_date">2025-10-28 ~ 2026-02-28</h6>
+                            <h5>473,000 원 ~</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container_wrap">
+                <div class="swiper-wrapper jeju">
+                    <div class="swiper-slide">
+                        <div class="img_box">
+                            <img src="img/sec1/2/1.png" alt="">
+                        </div>
+                        <div class="text_box">
+                            <h4>Winter Vacation</h4>
+                            <h6>[1월 25일까지 예약 가능] 산 전망 스탠다드 룸 + 조식 또는 중식 + 풀사이드 바 <br>수제 프라이드 치킨 & 감자튀김 + 리워즈 1만P + [주중] 사우나 및 리워즈 5만P 추가</h6>
+                            <h6 class="_date">2026-01-13 ~ 2026-02-27</h6>
+                            <h5>407,000 원 ~</h5>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="img_box">
+                            <img src="img/sec1/2/2.png" alt="">
+                        </div>
+                        <div class="text_box">
+                            <h4>Our Moments</h4>
+                            <h6>리워즈 1만P + 산 전망 스탠다드 룸 + 조식 또는 중식 + 아워 모먼츠 포토 타임 + <br>[2박 이상] 쁘띠 케이크 & 티</h6>
+                            <h6 class="_date">2026-01-01 ~ 2026-03-31</h6>
+                            <h5>374,000 원 ~</h5>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="img_box">
+                            <img src="img/sec1/2/3.png" alt="">
+                        </div>
+                        <div class="text_box">
+                            <h4>Sweet I Love_for Kid</h4>
+                            <h6>[2박 이상] 리워즈 1만P + 정원 전망 스위트 룸 + 조식 또는 중식 + 픽업&샌딩 서비스 + <br>익스프레스 체크인 + 캠핑 모먼츠 + 신라 베어 + 인 룸 키즈 혜택 + 끌레드뽀 보떼 스파 할인</h6>
+                            <h6 class="_date">2026-01-01 ~ 2026-04-30</h6>
+                            <h5>737,000 원 ~</h5>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="img_box">
+                            <img src="img/sec1/2/4.png" alt="">
+                        </div>
+                        <div class="text_box">
+                            <h4>Sweet I Love_for Baby</h4>
+                            <h6>[2박 이상] 리워즈 1만P + 프리미어 테라스 룸 (유아 범퍼 침대 + 그림자 동화 비치) + <br>조식 또는 중식 + 유아 간식 + 미니 케이크 + 유아 장난감 + 신라베어</h6>
+                            <h6 class="_date">2026-01-01 ~ 2026-04-30</h6>
+                            <h5>443,000 원 ~</h5>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="img_box">
+                            <img src="img/sec1/2/5.png" alt="">
+                        </div>
+                        <div class="text_box">
+                            <h4>Suites & Glamping Dinner</h4>
+                            <h6>리워즈 1만P + 스위트 룸+조식 또는 중식+ 글램핑 디너+ 객실 내 웰컴 트리트+ <br> 익스프레스 체크인+ [2박 이상] 풀사이드 바 윈터 핫 칵테일 스페셜</h6>
+                            <h6 class="_date">2026-01-08 ~ 2026-01-31</h6>
+                            <h5>649,000 원 ~</h5>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="img_box">
+                            <img src="img/sec1/2/6.png" alt="">
+                        </div>
+                        <div class="text_box">
+                            <h4>Comfy Hopping Stay</h4>
+                            <h6>제주신라호텔(1박) + 신라스테이 제주(1박) + 제주신라호텔 레이트 체크아웃(13시) + <br>제주신라호텔 '맛있는 제주' 3만원 이용권 + 신라스테이 제주 café 라운지 생맥주 2잔</h6>
+                            <h6 class="_date">2026-01-04 ~ 2026-01-30</h6>
+                            <h5>418,000 원 ~</h5>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="img_box">
+                            <img src="img/sec1/2/7.png" alt="">
+                        </div>
+                        <div class="text_box">
+                            <h4>I Love</h4>
+                            <h6>리워즈 1만P + 스탠다드 테라스 룸 + 조식 또는 중식 + G.A.O. 하프데이 키즈 캠프 + <br>끌레드뽀 보떼 스파 할인</h6>
+                            <h6 class="_date">2025-12-01 ~ 2026-03-31</h6>
+                            <h5>412,500 원 ~</h5>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="img_box">
+                            <img src="img/sec1/2/8.png" alt="">
+                        </div>
+                        <div class="text_box">
+                            <h4>Hinode Teppan Delights</h4>
+                            <h6>리워즈 1만P + 산 전망 스탠다드 룸 + 히노데 스페셜 데판 런치</h6>
+                            <h6 class="_date">2026-01-12 ~ 2026-03-31</h6>
+                            <h5>385,000 원 ~</h5>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="img_box">
+                            <img src="img/sec1/2/9.png" alt="">
+                        </div>
+                        <div class="text_box">
+                            <h4>Bellong Bellong Winter Vacation</h4>
+                            <h6>리워즈 1만P + 산 전망 디럭스 패밀리 트윈 룸 + 조식 또는 중식 + 벨롱벨롱 키즈 프로그램 +<br> [2박 이상] 풀사이드 바 수제 프라이드 치킨&감자튀김과 샐러드</h6>
+                            <h6 class="_date">2026-01-01 ~ 2026-02-28</h6>
+                            <h5>374,000 원 ~</h5>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="img_box">
+                            <img src="img/sec1/2/10.png" alt="">
+                        </div>
+                        <div class="text_box">
+                            <h4>More Nights, More Delights</h4>
+                            <h6>[2박 이상] 리워즈 1만P + 산 전망 디럭스 룸 + 조식 또는 중식 + 식음 크레딧 + <br>[3박 이상] 디너</h6>
+                            <h6 class="_date">2026-02-14 ~ 2026-02-17</h6>
+                            <h5>682,000 원 ~</h5>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="img_box">
+                            <img src="img/sec1/2/11.png" alt="">
+                        </div>
+                        <div class="text_box">
+                            <h4>Suites & Glamping Dinner</h4>
+                            <h6>리워즈 1만P + 스위트 룸+조식 또는 중식+ 글램핑 디너+ 객실 내 웰컴 트리트+ <br>익스프레스 체크인+ [2박 이상] 풀사이드 바 윈터 핫 칵테일 스페셜</h6>
+                            <h6 class="_date">2026-01-08 ~ 2026-01-31</h6>
+                            <h5>649,000 원 ~</h5>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="img_box">
+                            <img src="img/sec1/2/12.png" alt="">
+                        </div>
+                        <div class="text_box">
+                            <h4>Poolside Signature Selection</h4>
+                            <h6>리워즈 1만P + 산 전망 스탠다드 룸 + 조식 또는 중식 + 풀사이드 바 시그니처 고메 2인 +  <br>[2박 이상] 쁘띠 카바나</h6>
+                            <h6 class="_date">2026-01-03 ~ 2026-03-31</h6>
+                            <h5>374,000 원 ~</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container_wrap">
+                <div class="swiper-wrapper monogram">
+                    <div class="swiper-slide">
+                        <div class="img_box">
+                            <img src="img/sec1/3/1.png" alt="">
+                        </div>
+                        <div class="text_box">
+                            <h4>Flavors of Vietnam Seaside Escape</h4>
+                            <h6>[1월 25일까지 예약 가능][연박 전용] 3박 이상 투숙 시 베트남 전통요리 1회 + <br>다이닝 M 조식 + 미니바 무료 이용 1회</h6>
+                            <h6 class="_date">2026-01-12 ~ 2026-04-30</h6>
+                            <h5>3,560,000 VND ~</h5>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="img_box">
+                            <img src="img/sec1/3/2.png" alt="">
+                        </div>
+                        <div class="text_box">
+                            <h4>30-Hour Stay</h4>
+                            <h6>12시 얼리 체크인 + 익일 18시 레이트 체크아웃 <br>* 신라모노그램 강릉 레지던스</h6>
+                            <h6 class="_date">2025-12-05 ~ 2026-11-30</h6>
+                            <h5>140,520 원 ~</h5>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="img_box">
+                            <img src="img/sec1/3/3.png" alt="">
+                        </div>
+                        <div class="text_box">
+                            <h4>Vietnam Discovery</h4>
+                            <h6>다이닝 M 조식 + 베트남 쿠킹 클래스 1회 + 베트남 세트 메뉴 1회 + 베트남 전통 의상 대여 +<br>호텔↔호이안 또는 다낭 시티 센터 셔틀버스 + 미니바 무료 이용 1회<br>* 신라모노그램 다낭</h6>
+                            <h6 class="_date">2025-01-01 ~ 2026-12-31</h6>
+                            <h5>3,796,632 VND ~</h5>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="img_box">
+                            <img src="img/sec1/3/4.png" alt="">
+                        </div>
+                        <div class="text_box">
+                            <h4>Member Exclusive</h4>
+                            <h6>리워즈 회원 전용 객실 할인<br>* 신라모노그램 다낭</h6>
+                            <h6 class="_date">2024-01-01 ~ 2026-12-31</h6>
+                            <h5>3,551,688 VND ~</h5>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="img_box">
+                            <img src="img/sec1/3/5.png" alt="">
+                        </div>
+                        <div class="text_box">
+                            <h4>Mom & Baby Bliss</h4>
+                            <h6>신라 에디션 영아 침구 세트 + 맘앤베이비 신라베어 인형 + 발레파킹</h6>
+                            <h6 class="_date">2026-01-12 ~ 2026-03-31</h6>
+                            <h5>440,000 원 ~</h5>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="img_box">
+                            <img src="img/sec1/3/6.png" alt="">
+                        </div>
+                        <div class="text_box">
+                            <h4>Bed & Breakfast</h4>
+                            <h6>객실 할인가 + 다이닝 M 조식 + 미니바 무료 이용 1회 + [스위트 및 레지던스 객실 선택 시] <br>모노그램 라운지 이용<br>* 신라모노그램 다낭</h6>
+                            <h6 class="_date">2024-01-01 ~ 2026-12-31</h6>
+                            <h5>3,714,984 VND ~</h5>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="img_box">
+                            <img src="img/sec1/3/7.png" alt="">
+                        </div>
+                        <div class="text_box">
+                            <h4>Explore the Chinese Ancient Capital</h4>
+                            <h6>다이닝 M 조식 + 시티 투어 버스 티켓 2매 + 미니바 무료 이용 1회</h6>
+                            <h6 class="_date">2026-02-02 ~ 2026-06-30</h6>
+                            <h5>759 CNY ~</h5>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="img_box">
+                            <img src="img/sec1/3/8.png" alt="">
+                        </div>
+                        <div class="text_box">
+                            <h4>Light Up The New Year</h4>
+                            <h6>객실 할인가 + 일광전구 SNOWMAN15 Portable 1개 (예약 건당 제공) + <br>럭키드로우 쿠폰 1매 (예약 건당 제공) <br> * 신라모노그램 강릉 호텔</h6>
+                            <h6 class="_date">2026-01-01 ~ 2026-02-28</h6>
+                            <h5>209,360 원 ~</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container_wrap">
+                <div class="swiper-wrapper stay">
+                    <div class="swiper-slide">
+                        <div class="img_box">
+                            <img src="img/sec1/4/1.png" alt="">
+                        </div>
+                        <div class="text_box">
+                            <h4>Yeosu Fun Pass</h4>
+                            <h6>객실 할인가 + 여수 미남크루즈 1인 구매 시 1인 무료 탑승권 1매 (박당 제공) + <br>여수 아르떼뮤지엄 30%  할인 + 여수 스페이스파크 30% 할인<br>* 신라스테이 여수</h6>
+                            <h6 class="_date">2026-01-05 ~ 2026-02-28</h6>
+                            <h5>653,400 원 ~</h5>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="img_box">
+                            <img src="img/sec1/4/2.png" alt="">
+                        </div>
+                        <div class="text_box">
+                            <h4>Shilla Stay Jeonju 1st Anniversary</h4>
+                            <h6>객실 할인가 + 럭키 드로우 스크래치 쿠폰 1매 + SNS 인증샷 이벤트 (일-목 주중 한정) + <br>[특전] 조식 50% 할인 (1회 제공/최대 2인) <br>* 신라스테이 전주</h6>
+                            <h6 class="_date">2025-12-01 ~ 2026-02-28</h6>
+                            <h5>118,580 원 ~</h5>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="img_box">
+                            <img src="img/sec1/4/3.png" alt="">
+                        </div>
+                        <div class="text_box">
+                            <h4>Christmas with Bunny</h4>
+                            <h6>객실 할인가 + 피터 래빗 데니쉬 버터쿠키 1SET (예약 건당 제공) + 신라스테이 시그니처 <br>베어 1개 (예약 건당/색상 랜덤 제공) <br>* 신라스테이 전주</h6>
+                            <h6 class="_date">2025-12-23 ~ 2026-01-31</h6>
+                            <h5>114,400 원 ~</h5>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="img_box">
+                            <img src="img/sec1/4/4.png" alt="">
+                        </div>
+                        <div class="text_box">
+                            <h4>A Hug of Winter</h4>
+                            <h6>객실 할인가 + 조식 2인 + 한정판 신라스테이 윈터 베어 (예약 건당 제공) <br>* 신라스테이 전 지점/h6>
+                            <h6 class="_date">2025-12-01 ~ 2026-03-02</h6>
+                            <h5>110,770 원 ~</h5>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="img_box">
+                            <img src="img/sec1/4/5.png" alt="">
+                        </div>
+                        <div class="text_box">
+                            <h4>Wish Your Bucket 2026</h4>
+                            <h6>객실 할인가 + Wish Your Bucket Pack (예약 건당 제공) + From Now, 엽서 2매 <br>* 신라스테이 전 지점</h6>
+                            <h6 class="_date">2026-01-09 ~ 2026-03-31</h6>
+                            <h5>80,960 원 ~</h5>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="img_box">
+                            <img src="img/sec1/4/6.png" alt="">
+                        </div>
+                        <div class="text_box">
+                            <h4>Clock Out, Chill Out</h4>
+                            <h6>객실 할인가 + 조식 2인 + 수험생 할인 혜택 바우처 + [특전] 실물 수험표 지참 시, 중식 또는 <br>석식 뷔페 본인 50% 할인 & 동반 성인 2인 30% 할인<br>* 신라스테이 전 지점</h6>
+                            <h6 class="_date">2025-11-13 ~ 2026-02-12</h6>
+                            <h5>92,800 원 ~</h5>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="img_box">
+                            <img src="img/sec1/4/7.png" alt="">
+                        </div>
+                        <div class="text_box">
+                            <h4>Seoul City Tour Bus</h4>
+                            <h6>리워즈 3천P + 조식 2인 + 노랑풍선 서울시티투어버스 티켓 2매 (박당 제공) <br>* 신라스테이 광화문</h6>
+                            <h6 class="_date">2025-05-09 ~ 2026-11-30</h6>
+                            <h5>192,720 원 ~</h5>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="img_box">
+                            <img src="img/sec1/4/8.png" alt="">
+                        </div>
+                        <div class="text_box">
+                            <h4>Relaxing with Loccitance</h4>
+                            <h6>객실 할인가 + 조식 2인 + 록시땅 아로마콜로지 트래블 키트 1개 (박당 제공) <br> * 신라스테이 전지점</h6>
+                            <h6 class="_date">2025-12-01 ~ 2026-03-31</h6>
+                            <h5>109,120 원 ~</h5>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="img_box">
+                            <img src="img/sec1/4/8.png" alt="">
+                        </div>
+                        <div class="text_box">
+                            <h4>Let It Snow</h4>
+                            <h6>객실 할인가 + 여수 에코힐즈 눈썰매장 입장권 2매 (박당 제공) + 핫팩 2개 (박당 제공) + <br>레이트 체크아웃 1시간 <br>* 신라스테이 여수</h6>
+                            <h6 class="_date">2025-11-12 ~ 2026-02-15</h6>
+                            <h5>114,840 원 ~</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="prev">
+                <i class="fa-solid fa-angle-left"></i>
+            </div>
+            <div class="next">
+                <i class="fa-solid fa-angle-right"></i>
+            </div>
+        </div>
+    </section>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+<script>
+
+var swiper = new Swiper('.section1 .container_wrap', {
+        loop : true,
+        spaceBetween : 30,
+        centeredSlides: true,
+        slidesPerView: 3,
+        autoplay: {
+            delay: 5000,
+        },
+        navigation : {
+            nextEl: ".section1 .next",
+            prevEl: ".section1 .prev",
+        },
+    });
+
+        $(document).on('click', '.section1 .section_title .title2 li', function () {
+        $('.section1 .section_title .title2 li').removeClass('active')
+        $(this).addClass('active')
+
+        i = $(this).index()
+
+        $('.section1 .swiper-wrapper').css({opacity : '0'})
+        $('.section1 .swiper-wrapper').eq(i).css({opacity : '1'})
+    });
+</script>
+</html>

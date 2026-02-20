@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>로그인</title>
+    <link rel="stylesheet" href="com.css">
+    <link rel="stylesheet" href="login.css">
+    <link rel="icon" href="img/logo_b.png">
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/login.js"></script>
+</head>
+<body>
+    <!--header 시작-->
+    <div class="bg"></div>
+    <div class="bg1"></div>
+    <header>
+        <div class="header_top">
+            <div class="logo">
+                <a href="index.html"><img src="img/logo_w.png" alt=""></a>
+            </div>
+            <div class="right">
+                <ul class="right_ul">
+                    <li class="right_list"><a href="login.html">로그인</a></li>
+                    <li class="right_list"><a href="">호텔찾기</a></li>
+                    <li class="right_list"><a href="">멤버십</a></li>
+                    <li class="right_list drop_down">
+                        <a href="">예약확인<i class="fa-solid fa-angle-down"></i></a>
+                        <ul class="sub_ul">
+                            <li class="sub_list">
+                                <a href="">객실</a>
+                            </li>
+                            <li class="sub_list">
+                                <a href="">다이닝</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="right_list drop_down">
+                        <a href="">KR<i class="fa-solid fa-angle-down"></i></a>
+                        <ul class="sub_ul">
+                            <li class="sub_list">
+                                <a href="#" data-lang="'ko">KR</a>
+                            </li>
+                            <li class="sub_list">
+                                <a href="">English</a>
+                            </li>
+                            <li class="sub_list">
+                                <a href="">日本語</a>
+                            </li>
+                            <li class="sub_list">
+                                <a href="">中文(简体字)</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <a href=""><li class="btn">예약하기</li></a>
+                </ul>
+            </div>
+            <div class="ham">
+                <div class="bar bar1"></div>
+                <div class="bar bar2"></div>
+                <div class="bar bar3"></div>
+            </div>
+            <div class="language">
+                <a href="">KR<i class="fa-solid fa-angle-down"></i></a>
+                <ul class="sub_ul">
+                    <li class="sub_list on">
+                        <a href="#" data-lang="'ko">KR</a>
+                    </li>
+                    <li class="sub_list">
+                        <a href="">English</a>
+                    </li>
+                    <li class="sub_list">
+                        <a href="">日本語</a>
+                    </li>
+                    <li class="sub_list">
+                        <a href="">中文(简体字)</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="header_bottom">
+            <ul>
+                <li class="bottom_list">
+                    <a href="">brand</a>
+                    <div class="sub">
+                        <div class="container">
+                            <ul class="sub_ul">
+                                <li class="sub_li"><a href="">서울신라호텔</a></li>
+                                <li class="sub_li"><a href="">제주신라호텔</a></li>
+                                <li class="sub_li"><a href="">신라모노그램</a></li>
+                                <li class="sub_li"><a href="">신라스테이</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="bottom_list">
+                    <a href="dining.html">dining</a>
+                </li>
+                <li class="bottom_list">
+                    <a href="">member ship</a>
+                </li>
+                <li class="bottom_list">
+                    <a href="">wedding & convention</a>
+                    <div class="sub">
+                        <div class="container">
+                            <ul class="sub_ul">
+                                <li class="sub_li"><a href="">웨딩</a></li>
+                                <li class="sub_li"><a href="">기업연회</a></li>
+                                <li class="sub_li"><a href="">가족연회</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="bottom_list">
+                    <a href="">shilla shop</a>
+                </li>
+                <li class="bottom_list">
+                    <a href="">event</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <!--header 끝-->
+    <!--m_menu 시작-->
+    <div class="m_menu">
+        <div class="m_menu_top">
+            <div class="language">
+                <a href="">KR<i class="fa-solid fa-angle-down"></i></a>
+                <ul class="sub_ul">
+                    <li class="sub_list">
+                        <a href="#" data-lang="'ko">KR</a>
+                    </li>
+                    <li class="sub_list">
+                        <a href="">English</a>
+                    </li>
+                    <li class="sub_list">
+                        <a href="">日本語</a>
+                    </li>
+                    <li class="sub_list">
+                        <a href="">中文(简体字)</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="logo">
+                <a href="index.html"><img src="img/logo_b.png" alt=""></a>
+            </div>
+            <i class="fa-solid fa-x"></i> 
+            
+        </div>
+        <div class="m_login">
+            <div class="text">
+                <ul>
+                    <li><a href="login.html">로그인</a></li>
+                    <li><a href="">마이 페이지</a></li>
+                    <li><a href="">예약 확인</a></li>
+                </ul>
+            </div>
+            <div class="btn">예약하기</div>
+        </div>
+        <ul class="list">
+            <li class="m_list">
+                <a href="">brand <i class="fa-solid fa-angle-down"></i></a>
+                <div class="sub">
+                    <div class="item">
+                        <ul class="sub_ul">
+                            <li class="sub_li"><a href="#none">서울신라호텔</a></li>
+                            <li class="sub_li"><a href="#none">제주신라호텔</a></li>
+                            <li class="sub_li"><a href="#none">신라모노그램</a></li>
+                            <li class="sub_li"><a href="#none">신라스테이</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+            <li class="m_list">
+                <a href="dining.html">dining</a>
+            </li>
+            <li class="m_list">
+                <a href="#none">member ship</a>
+            </li>
+            <li class="m_list">
+                <a href="">wedding & convention <i class="fa-solid fa-angle-down"></i></a>
+                <div class="sub">
+                    <div class="item">
+                        <ul class="sub_ul">
+                            <li class="sub_li"><a href="#none">웨딩</a></li>
+                            <li class="sub_li"><a href="#none">기업연회</a></li>
+                            <li class="sub_li"><a href="#none">가족연회</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+            <li class="m_list">
+                <a href="#none">shilla shop</a>
+            </li>
+            <li class="m_list">
+                <a href="#none">event</a>
+            </li>
+        </ul>
+
+        <div class="un_menu">
+            <ul>
+                <li><a href="">고객지원</a></li>
+                <li><a href="">멤버십</a></li>
+                <li><a href="">오시는길</a></li>
+            </ul>
+            <div class="sns">
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-kakao-talk"></i></a>
+            </div>
+        </div>
+    </div>
+    <!--m_menu 끝-->
+
+    <!-- loing 시작-->
+    <div class="login">
+        <div class="login_top">
+            <h5>로그인</h5>
+            <h3>신라리워즈에 오신것을 환영합니다.</h3>
+            <h6>※ 신라리워즈 회원이되시면 회원만을 위한 다양한 서비스와 혜택을 받으실 수 있습니다.</h6>
+        </div>
+        <div class="login_bottom">
+            <div class="box">
+                <div class="login_form">
+                    <div class="left">
+                        <div class="login_tab">
+                            <ul>
+                                <li class="on"><a href="">회원</a></li>
+                                <li><a href="">비회원</a></li>
+                            </ul>
+                        </div>
+                        <!-- 회원 시작 -->
+                        <div class="form_box on">
+                            <div class="form">
+                                    <input type="text" placeholder="신라 리워즈 번호 또는 아이디" id="id">
+                                    <input type="password" placeholder="비밀번호" id="password">
+                            </div>
+                            <div class="find_info">
+                                <input type="checkbox" id="check">
+                                <div class="auto">
+                                    <span class="icon"></span>
+                                    <label for="check">신라 리워즈 번호 또는 아이디 저장</label>
+                                </div>
+                                <input type="checkbox" id="check1">
+                                <div class="auto au1">
+                                    <span class="icon ic1"></span>
+                                    <label for="check1">신라 리워즈 번호 또는 아이디 저장</label>
+                                </div>
+                                <div class="other_login">
+                                    <a href="#">아이디 / 비밀번호 찾기</a>
+                                </div>
+                            </div>
+                            <button class="form_btn">로그인 하기</button>
+                            <div class="other">
+                                    <div class="other_group"><a href="#">리워즈 아이디 찾기</a></div>
+                                    <div class="other_group"><a href="#">비밀번호 찾기</a></div>
+                                </div>
+                            <div class="sns_login">
+                                <a href=""><span class="icon icon1"></span></a>
+                                <a href=""><span class="icon icon2"></span></a>
+                                <a href=""><span class="icon icon3"></span></a>
+                                <a href=""><span class="icon icon4"></span></a>
+                            </div>
+                        </div>
+                        <!-- 회원 끝 -->
+                        <!-- 비회원 시작 -->
+                        <div class="form_box">
+                            <div class="be_loginbtn">
+                                <div class="parlor">
+                                    <input type="radio" name="type" id="parlor" checked>
+                                    <div class="auto">
+                                        <span></span>
+                                        <label for="parlor">객실</label>
+                                    </div>
+                                </div>
+                                <div class="dining">
+                                    <input type="radio" name="type" id="dining">
+                                    <div class="auto">
+                                        <span></span>
+                                        <label for="dining">다이닝</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 객실 시작 -->
+                            <div class="be_form on">
+                                <div class="input_id">
+                                    <input type="text" placeholder="예약번호" id="reservation">
+                                </div>
+                                <div class="input_pw">
+                                    <input type="text" placeholder="FIRST NAME" id="first">
+                                    <input type="text" placeholder="LAST NAME" id="last">
+                                </div>
+                            </div>
+                            <!-- 객실 끝 -->
+                            <!-- 다이닝 시작 -->
+                            <div class="be_form">
+                                <div class="input_id">
+                                    <input type="text" placeholder="예약번호" id="reservation">
+                                </div>
+                                <div class="input_pw">
+                                    <input type="text" placeholder="이름" id="name">
+                                </div>
+                            </div>
+                            <!-- 다이닝 끝 -->
+                            <button class="be_form_btn">로그인 하기</button>
+                        </div>
+                        <!-- 비회원 끝 -->
+                        <div class="login_note">
+                            <div class="note_wrap">
+                                <div class="note_box">
+                                    <ul>
+                                        <li>리워즈 로그인 시, 아이디를 입력해주세요.</li>
+                                        <li>아이디 확인은 아이디찾기를 이용해주세요.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="join_wrap">
+                            <a href="#">
+                                <div class="item_left">
+                                    <h5>회원가입</h5>
+                                    <h6>※ 신라리워즈 회원이 되시면 다양한 멤버십 정보 및 서비스 혜택을 받으실 수 있습니다.</h6>
+                                </div>
+                                <div class="item_right">
+                                    <i class="fa-solid fa-angle-right"></i>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <div class="join_box">
+                            <h4>아직 회원이 아니신가요?</h4>
+                            <ul class="note">
+                                <li>포인트 적립 및 사용</li>
+                                <li>회원 전용 상품</li>
+                                <li>사용할수록 커지는 혜택</li>
+                            </ul>
+                            <div class="btn">회원가입</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- login 끝-->
+    <!--footer 시작-->
+    <footer>
+        <div class="footer_top">
+            <div class="img_box">
+                <img src="img/logo_b.png" alt="">
+            </div>
+            <div class="brand">
+                <a href="">THE SHILLA</a>
+                <a href="">SHILLA MONOGRAM</a>
+                <a href="">SHILLA STAY</a>
+            </div>
+            <div class="sns">
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-kakao-talk"></i></a>
+            </div>
+        </div>
+        <div class="footer_mid">
+            <div class="left">
+                <a href=""><span>호텔 신라</span></a >
+                <a href=""><span>호텔 개발</span></a>
+                <a href=""><span>고객문의</span></a>
+                <a href=""><span>호텔별 연락처</span></a>
+                <a href=""><span>사이트맵</span></a>
+                <a href=""><span>신라 샵</span></a>
+            </div>
+            <div class="right">
+                <a href=""><span>신라리워즈 약관</span></a>
+                <a href=""><span>개인정보처리방침</span></a>
+            </div>
+        </div>
+        <div class="footer_bottom">
+            <div class="left">
+                <div class="item">
+                    <span>(주) 호텔신라 서울특별시 중구 동호로 249 (우 : 04605)</span>
+                    <span>대표 : 땡땡이</span>
+                    <span>사업자 등록번호 : 203-81-43363</span>
+                    <span>통신판매신고번호 중구 00272호</span>
+                </div>
+                <div class="item">
+                    <span>서울 객실 예약 : shilla.reserve@samsung.com</span>
+                    <span>제주 객실 예약 : jejushilla@samsung.com</span>
+                </div>
+                <div class="item">
+                    <span>Copyright © HOTEL SHILLA Co. LTD. All rights reserved.</span>
+                </div>
+            </div>
+            <div class="right">
+                <img src="img/footer.png" alt="">
+                <div class="text">
+                    <span>인증범위 : (주) 호텔신라 호텔 인터넷 홈페이지 서비스</span>
+                    <span>유효기간 : 2023.12.20 ~ 2026.12.19</span>
+                </div>
+            </div>
+            <div class="m_footer_bottom">
+                <div class="sns">
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-kakao-talk"></i></a>
+                </div>
+                <a href="#none">호텔 신라 사업자 정보 <i class="fa-solid fa-angle-down"></i></a>
+                <div class="cont">
+                    <p>
+                        <span>(주) 호텔신라 서울특별시 중구 동호로 249 (우 : 04605)</span>
+                        <span>대표 : 땡땡이</span>
+                    </p>
+                    <p>
+                        <span>사업자 등록번호 : 203-81-43363</span>
+                        <span>통신판매신고번호 중구 00272호</span>
+                    </p>
+                    <p>
+                        <span>서울 객실 예약 : shilla.reserve@samsung.com</span>
+                        <span>제주 객실 예약 : jejushilla@samsung.com</span>
+                    </p>
+                </div>
+                <span>Copyright © HOTEL SHILLA Co. LTD. All rights reserved.</span>
+            </div>
+            <div class="mark">
+                <img src="img/footer.png" alt="">
+                <div class="text">
+                    <span>인증범위 : (주) 호텔신라 호텔 인터넷 홈페이지 서비스</span>
+                    <span>유효기간 : 2023.12.20 ~ 2026.12.19</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--footer 끝-->
+</body>
+</html>
