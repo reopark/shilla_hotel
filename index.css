@@ -586,6 +586,10 @@
     height: 520px;
 }
 
+.section1 .container_group img {
+    height: 363px;
+}
+
 .section1 .container_wrap {
     position: absolute;
     top: 0;
@@ -633,6 +637,7 @@
     position: absolute;
     top: 50%;
     font-size: 32px;
+    cursor: pointer;
 }
 
 .section1 .container_group .prev {
